@@ -2,7 +2,7 @@
 
 # egg-plugin-context
 
-An eggjs plugin for parsing xml
+An egg plugin for handle context
 
 [![NPM version][npm-image]][npm-url]
 [![Codacy Badge][codacy-image]][codacy-url]
@@ -29,40 +29,34 @@ $ yarn add egg-plugin-context
 
 ## Usage
 
+Enable context plugin
+
 ```js
 // {app_root}/config/plugin.js
-exports.widthContext = {
+exports.withContext = {
     enable: true,
     package: 'egg-plugin-context'
 }
 ```
 
-## Configuration
+## Options
 
-egg-plugin-context support all configurations in [xml2js](https://github.com/Leonidas-from-XIV/node-xml2js).
+### contextName
 
-### eg. Do not always put child nodes in an array
+The contextName determines where to get the Context, like: `ctx.context`
 
 ```js
-// {app_root}/config/config.default.js
-exports.widthContext = {
-    limit: '2mb',
-    encoding: 'utf8',
-    key: 'body',
-    xmlOptions: {
-        explicitArray: false
-    }
+// {app_root}/router.js
+
+module.exports = app => {
+	const { router, controller, middleware } = app
+
+    router.post(
+		'/api/test',
+        middleware.withContext(ctx => ({ test: 100 })),
+		controller.test
+	)
 }
-```
-
-## Extends
-
-```js
-// {app_root}/app/extend/helper.js
-const { helper } = ctx
-
-helper.parserXML()
-helper.getXMLBody()
 ```
 
 ## Change logs
