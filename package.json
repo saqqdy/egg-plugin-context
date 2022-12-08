@@ -1,7 +1,7 @@
 {
 	"name": "egg-plugin-context",
 	"description": "An egg middleware for adding contexts",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"packageManager": "pnpm@7.14.2",
 	"eggPlugin": {
 		"name": "withContext"
