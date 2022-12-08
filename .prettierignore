@@ -4,6 +4,8 @@ node_modules
 dist
 public
 
+pnpm-lock.yaml
+
 *.bak
 *_bak
 *.bak.js

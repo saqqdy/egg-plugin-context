@@ -1,3 +1,3 @@
 module.exports = app => {
-    // app.config.coreMiddleware.push('withContext')
+	// app.config.coreMiddleware.push('withContext')
 }

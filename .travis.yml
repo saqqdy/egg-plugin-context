@@ -1,15 +1,15 @@
 language: node_js
 node_js:
-    - "12"
-    - "14"
-    - "16"
-    - "18"
+  - '12'
+  - '14'
+  - '16'
+  - '18'
 before_install:
-    - npm i npminstall -g
-    - npm i pnpm -g
+  - npm i npminstall -g
+  - npm i pnpm -g
 install:
-    - npminstall
+  - npminstall
 script:
-    - pnpm run ci
+  - pnpm run ci
 after_script:
-    - npminstall codecov && codecov
+  - npminstall codecov && codecov

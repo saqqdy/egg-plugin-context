@@ -34,8 +34,8 @@ Enable context plugin
 ```js
 // {app_root}/config/plugin.js
 exports.withContext = {
-    enable: true,
-    package: 'egg-plugin-context'
+  enable: true,
+  package: 'egg-plugin-context'
 }
 ```
 
@@ -45,13 +45,9 @@ exports.withContext = {
 // {app_root}/router.js
 
 module.exports = app => {
-	const { router, controller, middleware } = app
+  const { router, controller, middleware } = app
 
-    router.post(
-		'/api/test',
-        middleware.withContext({ token: 100 }),
-		controller.test
-	)
+  router.post('/api/test', middleware.withContext({ token: 100 }), controller.test)
 }
 
 // ctx.context.token === 100
@@ -63,13 +59,13 @@ module.exports = app => {
 // {app_root}/router.js
 
 module.exports = app => {
-	const { router, controller, middleware } = app
+  const { router, controller, middleware } = app
 
-    router.post(
-		'/api/test',
-        middleware.withContext(ctx => ({ test: 100 })),
-		controller.test
-	)
+  router.post(
+    '/api/test',
+    middleware.withContext(ctx => ({ test: 100 })),
+    controller.test
+  )
 }
 
 // ctx.context.test === 100
@@ -81,13 +77,13 @@ module.exports = app => {
 // {app_root}/router.js
 
 module.exports = app => {
-	const { router, controller, middleware } = app
+  const { router, controller, middleware } = app
 
-    router.post(
-		'/api/test',
-        middleware.withContext(async ctx => (Promise.resolve({ test: 100 }))),
-		controller.test
-	)
+  router.post(
+    '/api/test',
+    middleware.withContext(async ctx => Promise.resolve({ test: 100 })),
+    controller.test
+  )
 }
 
 // ctx.context.test === 100
@@ -103,13 +99,13 @@ The contextName determines where to get the Context, like: `ctx.context`
 // {app_root}/router.js
 
 module.exports = app => {
-	const { router, controller, middleware } = app
+  const { router, controller, middleware } = app
 
-    router.post(
-		'/api/test',
-        middleware.withContext({ token: 100 }, { contextName: 'contextData' }),
-		controller.test
-	)
+  router.post(
+    '/api/test',
+    middleware.withContext({ token: 100 }, { contextName: 'contextData' }),
+    controller.test
+  )
 }
 
 // ctx.contextData.token === 100

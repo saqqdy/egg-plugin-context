@@ -5,5 +5,5 @@
  * @property {String} SOME_KEY - some description
  */
 exports.withContext = {
-    contextName: 'context'
+	contextName: 'context'
 }
