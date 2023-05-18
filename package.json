@@ -27,7 +27,7 @@
 		"prettier": "prettier --write \"**/*.{js,ts,json,md}\""
 	},
 	"dependencies": {
-		"js-cool": "^3.1.0"
+		"js-cool": "^4.0.0"
 	},
 	"devDependencies": {
 		"@eslint-sets/eslint-config-simple": "^3.0.5",
