@@ -1,5 +1,10 @@
 # Change Logs
 
+## 2023.05.19 v1.1.0
+
+1. use `js-cool` v4.0.0
+2. upgrade all package version
+
 ## 2022.12.09 v1.0.2
 
 1. fix dependencies

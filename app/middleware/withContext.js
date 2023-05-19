@@ -1,5 +1,4 @@
-const setProperty = require('js-cool/lib/setProperty')
-const getType = require('js-cool/lib/getType')
+const { getType, setProperty } = require('js-cool')
 
 module.exports = (options = {}, config = {}) => {
 	return async function withContext(ctx, next) {

@@ -1,8 +1,8 @@
 {
 	"name": "egg-plugin-context",
 	"description": "An egg middleware for adding contexts",
-	"version": "1.0.2",
-	"packageManager": "pnpm@7.14.2",
+	"version": "1.1.0",
+	"packageManager": "pnpm@8.5.1",
 	"eggPlugin": {
 		"name": "withContext"
 	},
@@ -27,28 +27,28 @@
 		"prettier": "prettier --write \"**/*.{js,ts,json,md}\""
 	},
 	"dependencies": {
-		"js-cool": "^3.1.0"
+		"js-cool": "^4.0.0"
 	},
 	"devDependencies": {
-		"@eslint-sets/eslint-config-simple": "^3.0.5",
+		"@eslint-sets/eslint-config-basic": "^5.2.0",
 		"autod": "^3.1.2",
 		"autod-egg": "^1.1.0",
-		"egg": "^3.5.0",
-		"egg-bin": "^6.1.2",
+		"egg": "^3.16.0",
+		"egg-bin": "^6.4.0",
 		"egg-ci": "^2.2.0",
-		"eslint": "^8.27.0",
-		"eslint-config-egg": "^12.1.0",
-		"eslint-plugin-jsdoc": "^43.1.1",
+		"eslint": "^8.40.0",
+		"eslint-config-egg": "^12.2.1",
+		"eslint-plugin-jsdoc": "^44.2.4",
 		"npm-run-all": "^4.1.5",
-		"prettier": "^2.7.1",
-		"prettier-config-common": "^1.3.0",
+		"prettier": "^2.8.8",
+		"prettier-config-common": "^1.4.0",
 		"tsnd": "^1.1.0",
 		"webstorm-disable-index": "^1.2.0"
 	},
 	"peerDependencies": {
 		"egg": ">= 2",
 		"egg-bin": ">= 4",
-		"js-cool": ">= 2.7.1"
+		"js-cool": ">= 4"
 	},
 	"keywords": [
 		"eggjs",
