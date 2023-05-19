@@ -1,7 +1,7 @@
 {
 	"name": "egg-plugin-context",
 	"description": "An egg middleware for adding contexts",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"packageManager": "pnpm@8.5.1",
 	"eggPlugin": {
 		"name": "withContext"
@@ -44,25 +44,18 @@
 		"prettier": "^2.8.8",
 		"prettier-config-common": "^1.4.0",
 		"tsnd": "^1.1.0",
-		"webstorm-disable-index": "^1.2.0"
+		"zx": "^7.2.2"
 	},
 	"peerDependencies": {
 		"egg": ">= 2",
 		"egg-bin": ">= 4",
 		"js-cool": ">= 4"
 	},
-	"keywords": [
-		"eggjs",
-		"eggPlugin",
-		"egg-plugin-context",
-		"egg-plugin",
-		"egg-middleware",
-		"egg-context",
-		"withContext",
-		"context"
-	],
 	"engines": {
 		"node": ">=12.0.0"
+	},
+	"resolutions": {
+		"fsevents": ">= 2.0.0"
 	},
 	"pnpm": {
 		"peerDependencyRules": {
@@ -79,9 +72,16 @@
 			}
 		}
 	},
-	"resolutions": {
-		"fsevents": ">= 2.0.0"
-	},
+	"keywords": [
+		"eggjs",
+		"eggPlugin",
+		"egg-plugin-context",
+		"egg-plugin",
+		"egg-middleware",
+		"egg-context",
+		"withContext",
+		"context"
+	],
 	"publishConfig": {
 		"registry": "https://registry.npmjs.org",
 		"access": "public"
@@ -91,12 +91,12 @@
 	},
 	"license": "MIT",
 	"author": "saqqdy <https://github.com/saqqdy>",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/saqqdy/egg-plugin-context.git"
-	},
+	"homepage": "https://github.com/saqqdy/egg-plugin-context#readme",
 	"bugs": {
 		"url": "https://github.com/saqqdy/egg-plugin-context/issues"
 	},
-	"homepage": "https://github.com/saqqdy/egg-plugin-context#readme"
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/saqqdy/egg-plugin-context.git"
+	}
 }

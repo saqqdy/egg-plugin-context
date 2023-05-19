@@ -1,5 +1,9 @@
 # Change Logs
 
+## 2023.05.19 v1.1.1
+
+1. fix bugs
+
 ## 2023.05.19 v1.1.0
 
 1. use `js-cool` v4.0.0
