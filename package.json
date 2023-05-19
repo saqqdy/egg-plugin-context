@@ -21,6 +21,7 @@
 		"pub": "tscjs scripts/publish",
 		"unpub": "tscjs scripts/unpublish",
 		"sync": "tscjs scripts/sync",
+		"workflow:publish-test": "zx scripts/workflow.mjs",
 		"dist": "run-s eslint prettier pub",
 		"autod": "autod",
 		"eslint": "eslint --fix --ext .ts,.js ./",
